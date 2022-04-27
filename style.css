@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Bodoni:ital,wght@1,500&family=Open+Sans:wght@400;500&display=swap');
+
+/* bootstrap icons, copy the cdn downwards */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* base styling */
+
+:root{
+    --primary-color:#0c092f;
+    --secondary-color:#0d6efd;
+    --tertiary-color:#f3f3f3;
+}
+p,h1,h2,h3,h4,h5,h6,span{
+    color:var(--primary-color)
+}
+button:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+}
+.p-100{
+    padding: 100px 0;
+}
+.gradient{
+    background-color: rgba(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(24,184,241,1) 0%, rgba(109,0,250,1) 100%);
+}
+
+/* navbar */
+.nav-item{
+    margin-left: 1rem;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+.navbar-nav .nav-item .nav-link i{
+    color: var(--secondary-color) !important;
+}
+.navbar-nav .nav-item .nav-link:hover i{
+   color: var(--tertiary-color) !important;
+}
+
+/* end navbar */
+
+/* header section */
+.banner{
+    animation: move 5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+@keyframes move{
+    0%,100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 20px;
+    }
+}
+/* endheader section */
+
+/* about section */
+
+   .about-icons i{
+       padding-right: .6rem;
+       font-size: 24px;
+   }
+/* end about section */
+
+/* services section */
+.card,p{
+    color: var(--primary-color);
+}
+.card i{
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+.card:hover{
+    background-color: rgba(249,249,249);
+    background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(24,184,241,1) 0%, rgba(109,0,250,1) 100%);
+    border: none;
+}
+.card:hover i,
+.card:hover p{
+    color: var(--tertiary-color);
+}
+
+/* end service section */
+/* contact section */
+#contact form{
+    padding: 3rem;
+}
+/* end contact section */
+/* footer section */
+   footer{
+       text-align: center;
+   }
+   footer a{
+       text-decoration: none;
+   }
+/* end footer section */
